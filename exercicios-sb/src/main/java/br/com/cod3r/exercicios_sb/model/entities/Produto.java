@@ -84,4 +84,8 @@ public class Produto {
 		this.estoque = estoque;
 	}
 
+    public double getPrecoComDesconto(){
+        return getPreco() - (getDesconto() * getPreco());
+    }
+
 }
